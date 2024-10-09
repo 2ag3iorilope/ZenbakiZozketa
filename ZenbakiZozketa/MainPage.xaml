@@ -1,0 +1,30 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZenbakiZozketa.MainPage">
+
+    <VerticalStackLayout Padding="10">
+
+        <Grid x:Name="checkboxGrid" RowSpacing="10" ColumnSpacing="10" />
+
+   
+        <HorizontalStackLayout Spacing="10" Margin="20">
+            <Button x:Name="btnSorteo" Text="Sorteo" IsEnabled="False" Clicked="OnSorteoClicked" />
+            <Button x:Name="btnNuevo" Text="Nuevo" IsEnabled="False" Clicked="OnNuevoClicked" />
+            <Button x:Name="btnSalir" Text="Salir" Clicked="OnSalirClicked" />
+        </HorizontalStackLayout>
+
+        <VerticalStackLayout Spacing="10">
+            <Label Text="Números premiados:" />
+            <Entry x:Name="txtNumerosPremiados" IsReadOnly="True" />
+
+            <Label Text="Aciertos:" />
+            <Entry x:Name="txtAciertos" IsReadOnly="True" />
+
+       
+            <Label Text="Tus números seleccionados:" />
+            <VerticalStackLayout x:Name="selectedNumbersLayout">
+             
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>
